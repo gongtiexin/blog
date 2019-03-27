@@ -1,14 +1,16 @@
 ---
 title: Node
 date: 2017-03-15 10:24:07
+
+categories:
+- 技术
+
 tags:
-  - 前端
+- node
 ---
 
 ## 安装
 先去官网下载[源码][1]
-
-[1]: https://nodejs.org/en/download/
 
 ```
 //首先确保系统安装来python,gcc,g++,如果没有则安装：
@@ -58,4 +60,5 @@ n lts
  * 注意n安装了以后使用node要选择n安装路径下面的node来使用
 [点击查看更多命令][2]
 
+[1]: https://nodejs.org/en/download/
 [2]: https://www.npmjs.com/package/n

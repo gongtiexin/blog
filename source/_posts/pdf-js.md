@@ -1,13 +1,17 @@
 ---
-title: Pdf.js
+title: 集成Pdf.js
 date: 2017-12-06 10:49:28
+
+categories:
+- 技术
+
 tags:
-  - 前端
+- pdf.js
 ---
 
 ## 下载
 
-[Pre-built](https://mozilla.github.io/pdf.js/getting_started/)
+[Pre-built][1]
 
 ## 集成
 
@@ -22,3 +26,5 @@ tags:
 ## 访问
 
 根据你的路径访问web/viewer.html?file=${yourpdf}
+
+[1]: https://mozilla.github.io/pdf.js/getting_started/

@@ -1,28 +1,25 @@
 ---
-title: 实现一个低配版的vuex或mobx
+title: 实现一个低配版的Vuex或Mobx
 date: 2018-03-01 14:52:41
+
+categories:
+- 技术
+
 tags:
-  - 前端
-  -  defineProperty
+- defineProperty
 ---
 
-## 原理
+## 实现原理
 
 vuex或者mobx都是通过Object.defineProperty来实现数据劫持。当我们访问或设置对象的属性的时候，都会触发相对应的函数，通过劫持对象属性的setter和getter操作，来进行双向绑定。其主要由下面三个部分组成:
 
-### Observer
+- Observer 负责数据劫持，把所有的属性定义成被观察者，达到对数据进行观测的目的
 
-负责数据劫持，把所有的属性定义成被观察者，达到对数据进行观测的目的
+- Watcher 数据的观察者，在数据发生变化之后执行的相应的回调函数
 
-### Watcher
+- Dep 每一个observer会创建一个Dep实例，实例在get数据的时候为数据收集watcher，在set的时候执行watcher内的回调方法
 
-数据的观察者，在数据发生变化之后执行的相应的回调函数
-
-### Dep
-
-每一个observer会创建一个Dep实例，实例在get数据的时候为数据收集watcher，在set的时候执行watcher内的回调方法
-
-## 实现
+## 代码实现
 
 ```
 // Dep

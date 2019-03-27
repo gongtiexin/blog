@@ -1,8 +1,12 @@
 ---
 title: Nginx
 date: 2017-03-23 11:44:17
+
+categories:
+- 技术
+
 tags:
-  - 前端
+- nginx
 ---
 
 ## 彻底删除nginx(Ubuntu)

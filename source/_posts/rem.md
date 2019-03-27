@@ -1,9 +1,12 @@
 ---
 title: 移动端适配方案rem
 date: 2018-05-23 14:50:42
+
+categories:
+- 技术
+
 tags:
-  - 前端
-  - 移动端
+- rem
 ---
 
 ## 背景
@@ -56,9 +59,11 @@ CSS像素是一个抽像的单位，主要使用在浏览器上，用来精确�
 
 ## 实践
 
-使用[`lib-flexible`](https://github.com/amfe/lib-flexible)，它会帮我们计算好rem。接下来把视觉稿中的`px`转换成`rem`就行了，但是每次转换会很费时间，所以我们可以借助插件来帮我们完成，这里我采用的是px2rem-loader（webpack）。最后你就可以放心的按照设计稿开发了。
+使用[`lib-flexible`][1]，它会帮我们计算好rem。接下来把视觉稿中的`px`转换成`rem`就行了，但是每次转换会很费时间，所以我们可以借助插件来帮我们完成，这里我采用的是px2rem-loader（webpack）。最后你就可以放心的按照设计稿开发了。
 
 ---------------------------------------
 
-参考[使用Flexible实现手淘H5页面的终端适配](https://github.com/amfe/article/issues/17)
+参考[使用Flexible实现手淘H5页面的终端适配][2]
 
+[1]: https://github.com/amfe/lib-flexible
+[2]: https://github.com/amfe/article/issues/17

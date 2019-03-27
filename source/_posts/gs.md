@@ -1,24 +1,27 @@
 ---
-title: Geoserver + Postgis + OpenStreetMap + OpenLayers
+title: 用Geoserver搭建自己的地图服务
 date: 2017-09-26 17:07:12
-tags:
-  - geoserver
-  - postgis
-  - openStreetMap
-  - openLayers
 
+categories:
+- 技术
+
+tags:
+- geoserver
+- postgis
+- openStreetMap
+- openLayers
 ---
 
 ## 安装 Geoserver
 
-下载[geoserver](http://geoserver.org/download/)并解压
+下载[geoserver][1]并解压
 
 ```
 cd /geoserver/bin/
 ./startup.bat
 ```
 
-访问(geoServer)[http://localhost:8080/geoserver/web] 初始账号：admin  密码：geoserver
+访问[geoServer][2] 初始账号：admin  密码：geoserver
 
 geoServer默认端口为8080，其值对应文件start.ini里的jetty.port，可修改
 
@@ -26,7 +29,7 @@ geoServer默认端口为8080，其值对应文件start.ini里的jetty.port，可
 
 ### PostGis
 
-ubuntu 16.04 [安装教程](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS23UbuntuPGSQL96Apt)
+ubuntu 16.04 [安装教程][3]
 
 #### Postgresql 设置默认用户 postgres 的密码
 
@@ -64,7 +67,7 @@ sudo make install
 
 #### 导入osm数据(不包含openstreetmap-carto样式)
 
-下载[OpenStreetMap](http://download.geofabrik.de/)(.osm.pbf)
+下载[OpenStreetMap][4]
 
 为postgresql安装以下扩展
 
@@ -85,7 +88,7 @@ osm2pgsql -s -U postgres -H 127.0.0.1 -P 5432 -W -d chinaosmgisdb /tmp/china-lat
 
 ####  导入openstreetmap-carto样式
 
-下载[openstreetmap-carto](https://codeload.github.com/gravitystorm/openstreetmap-carto/zip/master)
+下载[openstreetmap-carto][5]
 
 正式导入数据
 
@@ -97,15 +100,13 @@ osm2pgsql -s -U postgres -H 127.0.0.1 -P 5432 -W -d chinaosmgisdb /tmp/china-lat
 
 ###  shapefile
 
-下载[OpenStreetMap](http://download.geofabrik.de/)(.shp)
-
 curl -v -u admin:@pp\$4boundleSS -XPOST -d@layergroup.xml -H "Content-type: text/xml" http://apps.opengeo.org/geoserver/rest/workspaces/osm/layergroups
 
 ## GeoServer创建图层
 
 ### 创建图层数据表
 
-下载[osmsld.zip](http://files.cnblogs.com/files/think8848/osmsld.zip)
+下载[osmsld.zip][6]
 
 ```
 wget -O osmsld.zip http://files.cnblogs.com/files/think8848/osmsld.zip
@@ -163,7 +164,7 @@ fc-cache
 
 ## 导入OpenStreetMap海图数据，并在GeoServer上发布
 
-### 下载[OpenStreetMap海图数据](http://openstreetmapdata.com/data/water-polygons)
+### 下载[OpenStreetMap海图数据][7]
 
 因为下载的OpenStreetMap的中国数据是Mercator投影坐标系,SRID为3857,s所以下载第二个
 
@@ -193,9 +194,18 @@ WHERE ST_Intersects(b.geom, o.geom);
 ### 在GeoServer中创建ocean图层
 直接在GeoServer建图层即可，唯一要注意的就是在图层样式中选择chinaosm:ocean样式
 
-## [Openlayers](http://openlayers.org)
+## [Openlayers][8]
 Openlayers比较简单，主要难点在于对API的熟练度。官网提供了大量例子来参考
 
 ---------------------------------------
 
 参考[think8848的博客](http://think8848.cnblogs.com)
+
+[1]: http://geoserver.org/download/
+[2]: http://localhost:8080/geoserver/web
+[3]: http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS23UbuntuPGSQL96Apt
+[4]: http://download.geofabrik.de/
+[5]: https://codeload.github.com/gravitystorm/openstreetmap-carto/zip/master
+[6]: http://files.cnblogs.com/files/think8848/osmsld.zip
+[7]: http://openstreetmapdata.com/data/water-polygons
+[8]: http://openlayers.org

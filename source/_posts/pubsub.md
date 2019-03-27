@@ -69,33 +69,33 @@ class PubSub {
 
   publish = (topic, ...args) =>
     this.topics[topic]?.forEach(({ func }) => {
-      func(topic, args);
+      func(args);
     });
 }
 
 // 一个简单的消息记录器，记录通过我们收到的任何主题和数据
-const messageLogger = (topic, data) => {
-  console.log(`Logging: ${topic}: ${data}`);
+const messageLogger = msg => {
+  console.log(`Logging: ${msg}`);
 };
 
 const pubSub = new PubSub();
 
-const subscription1 = pubSub.subscribe("f", messageLogger);
-const subscription2 = pubSub.subscribe("s", messageLogger);
+const subscription1 = pubSub.subscribe("friend1", messageLogger);
+const subscription2 = pubSub.subscribe("friend2", messageLogger);
 
-pubSub.publish("f", "hello, f!");
-pubSub.publish("s", "hello, s!");
+pubSub.publish("friend1", "hello, friend1!");
+pubSub.publish("friend2", "hello, friend2!");
 
 pubSub.unsubscribe(subscription1);
 
-pubSub.publish("f", "hello, f!");
-pubSub.publish("s", "hello, s!");
+pubSub.publish("friend1", "goodbye, friend1!");
+pubSub.publish("friend2", "goodbye, friend2!");
 
 // console
-// Logging: f: hello, f!
-// Logging: s: hello, s!
+// Logging: hello, friend1!
+// Logging: hello, friend2!
 // unsubscribe: 0
-// Logging: s: goodbye, s!
+// Logging: goodbye, friend2!
 ```
 
 

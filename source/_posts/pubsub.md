@@ -3,10 +3,10 @@ title: 发布订阅模式
 date: 2019-03-26 16:37:07
 
 categories:
-- 技术
+  - 技术
 
 tags:
-- 设计模式
+  - 设计模式
 ---
 
 ## [维基百科][1]中的定义
@@ -27,13 +27,13 @@ tags:
 
 ## 实现思路
 
-1. 作为发布者提供subscribe方法给订阅者
+1. 作为发布者提供 subscribe 方法给订阅者
 
 2. 发布者提供了订阅的方法后应该将这些订阅者都存起来，记录以便日后给他们推送消息
 
-3. 作为发布者要有publish方法推送消息
+3. 作为发布者要有 publish 方法推送消息
 
-4. 订阅者如何订阅消息或者事件，订阅者还可以通过unsubscribe取消订阅
+4. 订阅者如何订阅消息或者事件，订阅者还可以通过 unsubscribe 取消订阅
 
 ## 代码实现
 
@@ -97,6 +97,5 @@ pubSub.publish("friend2", "goodbye, friend2!");
 // unsubscribe: 0
 // Logging: goodbye, friend2!
 ```
-
 
 [1]: https://zh.wikipedia.org/wiki/%E5%8F%91%E5%B8%83/%E8%AE%A2%E9%98%85

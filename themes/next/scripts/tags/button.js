@@ -1,5 +1,5 @@
 /**
- * button.js | https://theme-next.org/docs/tag-plugins/button/
+ * button.js | https://theme-next.org/docs/tag-plugins/button
  */
 
 /* global hexo */
@@ -8,13 +8,13 @@
 
 function postButton(args) {
   args = args.join(' ').split(',');
-  var url   = args[0];
-  var text  = args[1] || '';
-  var icon  = args[2] || '';
+  var url = args[0];
+  var text = args[1] || '';
+  var icon = args[2] || '';
   var title = args[3] || '';
 
   if (!url) {
-    hexo.log.warn('URL can NOT be empty');
+    hexo.log.warn('URL can NOT be empty.');
   }
 
   text = text.trim();
@@ -31,5 +31,5 @@ function postButton(args) {
   return result.join('');
 }
 
-hexo.extend.tag.register('button', postButton, {ends: false});
-hexo.extend.tag.register('btn', postButton, {ends: false});
+hexo.extend.tag.register('button', postButton, { ends: false });
+hexo.extend.tag.register('btn', postButton, { ends: false });

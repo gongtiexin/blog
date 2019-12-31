@@ -28,23 +28,15 @@ post:
   read_more: Leggi di più
   untitled: Senza titolo
   sticky: Sticky
-  toc_empty: Questo post non ha un indice
   views: Views
-  comments_count: Comments
   related_posts: Related Posts
-  copy_button: Copy
-  copy_success: Copied
-  copy_failure: Copy failed
   copyright:
     author: Autore
     link: Link
     license_title: Copyright
-    license_content: "Tutti gli articoli in questo sito sono sotto licenza %s salvo disposizione contraria."
-page:
-  totally: Totale
-  tags: tags
+    license_content: 'Tutti gli articoli in questo sito sono sotto licenza %s salvo disposizione contraria.'
 footer:
-  powered: "Powered by %s"
+  powered: 'Powered by %s'
   theme: Tema
   total_views: Total Views
   total_visitors: Total Visitors
@@ -52,18 +44,17 @@ counter:
   tag_cloud:
     zero: Nessun tag
     one: 1 tag in totale
-    other: "%d tags in totale."
+    other: '%d tags in totale.'
   categories:
     zero: Nessuna categoria
     one: 1 categoria in totale
-    other: "%d categorie in totale."
+    other: '%d categorie in totale.'
   archive_posts:
     zero: Nessun post.
     one: 1 post.
-    other: "%d posts in totale."
+    other: '%d posts in totale.'
 state:
   posts: posts
-  pages: pagine
   tags: tags
   categories: categorie
 search:
@@ -77,15 +68,14 @@ cheers:
   excellent: Eccellente
 keep_on: Continua così.
 symbol:
-  comma: ", "
-  period: ". "
-  colon: ": "
+  comma: ', '
+  period: '. '
+  colon: ': '
 reward:
   donate: Dona
   wechatpay: WeChat Pay
   alipay: Alipay
   bitcoin: Bitcoin
-gitmentbutton: Show comments from Gitment
 accessibility:
   nav_toggle: Toggle navigation bar
   prev_page: Pagina precedente

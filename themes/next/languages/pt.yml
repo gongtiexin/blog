@@ -28,23 +28,15 @@ post:
   read_more: Ler mais
   untitled: Sem título
   sticky: Sticky
-  toc_empty: Esta publicação não possui uma tabela de conteúdo
   views: Views
-  comments_count: Comments
   related_posts: Related Posts
-  copy_button: Copy
-  copy_success: Copied
-  copy_failure: Copy failed
   copyright:
     author: Post author
     link: Post link
     license_title: Copyright Notice
-    license_content: "All articles in this blog are licensed under %s unless stating additionally."
-page:
-  totally: Totalmente
-  tags: tags
+    license_content: 'All articles in this blog are licensed under %s unless stating additionally.'
 footer:
-  powered: "Desenvolvido com amor com %s"
+  powered: 'Desenvolvido com amor com %s'
   theme: Tema
   total_views: Total Views
   total_visitors: Total Visitors
@@ -52,18 +44,17 @@ counter:
   tag_cloud:
     zero: Sem tags
     one: 1 tag no total
-    other: "%d tags no total"
+    other: '%d tags no total'
   categories:
     zero: Sem categorias
     one: 1 categoria no total
-    other: "%d categorias no total"
+    other: '%d categorias no total'
   archive_posts:
     zero: Sem publicações.
     one: 1 post.
-    other: "%d publicações no total."
+    other: '%d publicações no total.'
 state:
   posts: publicações
-  pages: páginas
   tags: tags
   categories: categorias
 search:
@@ -77,15 +68,14 @@ cheers:
   excellent: Excelente
 keep_on: Mantenha-se publicando!
 symbol:
-  comma: ", "
-  period: ". "
-  colon: ": "
+  comma: ', '
+  period: '. '
+  colon: ': '
 reward:
   donate: Donate
   wechatpay: WeChat Pay
   alipay: Alipay
   bitcoin: Bitcoin
-gitmentbutton: Show comments from Gitment
 accessibility:
   nav_toggle: Toggle navigation bar
   prev_page: Página anterior

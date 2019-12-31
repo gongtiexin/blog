@@ -28,23 +28,15 @@ post:
   read_more: Daha fazla oku
   untitled: Başlıksız
   sticky: Sabit
-  toc_empty: Bu gönderinin içindekiler kısmı yok
   views: Görünümler
-  comments_count: Yorumlar
   related_posts: İlgili Gönderiler
-  copy_button: Kopyala
-  copy_success: Kopyalandı
-  copy_failure: Kopyalanamadı
   copyright:
     author: Gönderiyi yazan
     link: Gönderi bağlantısı
     license_title: Telif Hakkı Bildirimi
-    license_content: "Bu blogdaki tüm makaleler aksi belirtilmediği sürece %s altında lisanslıdır."
-page:
-  totally: Toplamda
-  tags: etiketler
+    license_content: 'Bu blogdaki tüm makaleler aksi belirtilmediği sürece %s altında lisanslıdır.'
 footer:
-  powered: "%s tarafından desteklenmektedir"
+  powered: '%s tarafından desteklenmektedir'
   theme: Tema
   total_views: Toplam görüntülenme
   total_visitors: Toplam Ziyaretçi
@@ -52,18 +44,17 @@ counter:
   tag_cloud:
     zero: Etiket yok
     one: Toplam 1 etiket
-    other: "Toplamda %d etiket"
+    other: 'Toplamda %d etiket'
   categories:
     zero: Kategori yok
     one: Toplamda 1 kategori
-    other: "Toplamda %d kategori"
+    other: 'Toplamda %d kategori'
   archive_posts:
     zero: Gönderi yok.
     one: 1 gönderi.
-    other: "Toplamda %d gönderi."
+    other: 'Toplamda %d gönderi.'
 state:
   posts: gönderiler
-  pages: sayfalar
   tags: etiketler
   categories: kategoriler
 search:
@@ -77,15 +68,14 @@ cheers:
   excellent: Mükemmel
 keep_on: Gönderiye devam.
 symbol:
-  comma: ", "
-  period: ". "
-  colon: ": "
+  comma: ', '
+  period: '. '
+  colon: ': '
 reward:
   donate: Bağış
   wechatpay: WeChat Pay
   alipay: Alipay
   bitcoin: Bitcoin
-gitmentbutton: Gitment'ın yorumlarını göster
 accessibility:
   nav_toggle: Gezinti çubuğunu değiştir
   prev_page: Önceki sayfa

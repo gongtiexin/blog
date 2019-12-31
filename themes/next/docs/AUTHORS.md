@@ -6,38 +6,14 @@ NexT theme was initially developed by:
 
 With collaborators from initially repository:
 
-- **Ivan.Nginx**: [DIFF highlight](https://github.com/iissnan/hexo-theme-next/pull/1079),
-                  [HyperComments](https://github.com/iissnan/hexo-theme-next/pull/1155),
-                  [`{% note %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1160),
-                  [`seo` option](https://github.com/iissnan/hexo-theme-next/pull/1311),
-                  [`{% button %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1328),
-                  [VK API](https://github.com/iissnan/hexo-theme-next/pull/1381),
-                  [WordCount plugin support](https://github.com/iissnan/hexo-theme-next/pull/1381),
-                  [Yandex verification option](https://github.com/iissnan/hexo-theme-next/pull/1381),
-                  [`{% exturl %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1438),
-                  [`b2t` option](https://github.com/iissnan/hexo-theme-next/pull/1438),
-                  [`scrollpercent` option](https://github.com/iissnan/hexo-theme-next/pull/1438),
-                  [`save_scroll` option](https://github.com/iissnan/hexo-theme-next/pull/1574),
-                  [Star rating](https://github.com/iissnan/hexo-theme-next/pull/1649),
-                  [`mobile_layout_economy` option](https://github.com/iissnan/hexo-theme-next/pull/1697),
-                  [`{% tabs %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1697),
-                  [`{% label %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1697),
-                  [**`Gemini`** scheme](https://github.com/iissnan/hexo-theme-next/pull/1697),
-                  [Menu & Sidebar icons in 1 line](https://github.com/iissnan/hexo-theme-next/pull/1830),
-                  [Sidebar scrollable](https://github.com/iissnan/hexo-theme-next/pull/1898),
-                  [Responsive favicons](https://github.com/iissnan/hexo-theme-next/pull/1898)
-                  and many other [PR's with fixes and enhancements](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aivan-nginx)
+- **Ivan.Nginx**: [DIFF highlight](https://github.com/iissnan/hexo-theme-next/pull/1079), [HyperComments](https://github.com/iissnan/hexo-theme-next/pull/1155), [`{% note %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1160), [`seo` option](https://github.com/iissnan/hexo-theme-next/pull/1311), [`{% button %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1328), [VK API](https://github.com/iissnan/hexo-theme-next/pull/1381), [WordCount plugin support](https://github.com/iissnan/hexo-theme-next/pull/1381), [Yandex verification option](https://github.com/iissnan/hexo-theme-next/pull/1381), [`{% exturl %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1438), [`b2t` option](https://github.com/iissnan/hexo-theme-next/pull/1438), [`scrollpercent` option](https://github.com/iissnan/hexo-theme-next/pull/1438), [`save_scroll` option](https://github.com/iissnan/hexo-theme-next/pull/1574), [Star rating](https://github.com/iissnan/hexo-theme-next/pull/1649), [`mobile_layout_economy` option](https://github.com/iissnan/hexo-theme-next/pull/1697), [`{% tabs %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1697), [`{% label %}` tag](https://github.com/iissnan/hexo-theme-next/pull/1697), [**`Gemini`** scheme](https://github.com/iissnan/hexo-theme-next/pull/1697), [Menu & Sidebar icons in 1 line](https://github.com/iissnan/hexo-theme-next/pull/1830), [Sidebar scrollable](https://github.com/iissnan/hexo-theme-next/pull/1898), [Responsive favicons](https://github.com/iissnan/hexo-theme-next/pull/1898) and many other [PR's with fixes and enhancements](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aivan-nginx)
 - **Acris**: [Many PR's with fixes and updates](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3AAcris)
 
 And best contributors from initially repository:
 
-- **Rainy**: [Gentie comments](https://github.com/iissnan/hexo-theme-next/pull/1301),
-             [Han](https://github.com/iissnan/hexo-theme-next/pull/1598)
-             and many [PR's with fixes and optimizations](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Ageekrainy)
-- **Jeff**: [Local search](https://github.com/iissnan/hexo-theme-next/pull/694)
-            and many [PR's with fixes and improvements](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aflashlab)
-- **Haocen**: [Footer enhancements](https://github.com/iissnan/hexo-theme-next/pull/1886)
-              and some other [PR's with improvements](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3AHaocen)
+- **Rainy**: [Gentie comments](https://github.com/iissnan/hexo-theme-next/pull/1301), [Han](https://github.com/iissnan/hexo-theme-next/pull/1598) and many [PR's with fixes and optimizations](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Ageekrainy)
+- **Jeff**: [Local search](https://github.com/iissnan/hexo-theme-next/pull/694) and many [PR's with fixes and improvements](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aflashlab)
+- **Haocen**: [Footer enhancements](https://github.com/iissnan/hexo-theme-next/pull/1886) and some other [PR's with improvements](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3AHaocen)
 - **uchuhimo**: [Greatest enhancements for local search](https://github.com/iissnan/hexo-theme-next/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Auchuhimo)
 - **Kei**: [Change static file setting to support subdirectory](https://github.com/iissnan/hexo-theme-next/pull/4)
 - **Jolyon**: [Swiftype](https://github.com/iissnan/hexo-theme-next/pull/84)
@@ -71,8 +47,7 @@ And best contributors from initially repository:
 - **Jacksgong**: [Copyright on posts](https://github.com/iissnan/hexo-theme-next/pull/1497)
 - **zhaiqianfeng**: [Changyan comments](https://github.com/iissnan/hexo-theme-next/pull/1514)
 - **zproo**: [`canvas_ribbon` option](https://github.com/iissnan/hexo-theme-next/pull/1565)
-- **jjandxa**: [`three_waves`](https://github.com/iissnan/hexo-theme-next/pull/1534),
-               [`canvas_lines` and `canvas_sphere`](https://github.com/iissnan/hexo-theme-next/pull/1595) options
+- **jjandxa**: [`three_waves`](https://github.com/iissnan/hexo-theme-next/pull/1534), [`canvas_lines` and `canvas_sphere`](https://github.com/iissnan/hexo-theme-next/pull/1595) options
 - **shenzekun**: [Load bar at the top](https://github.com/iissnan/hexo-theme-next/pull/1689)
 - **elkan1788**: [Upgrade jiathis share](https://github.com/iissnan/hexo-theme-next/pull/1796)
 - **xCss**: [Valine comment system support](https://github.com/iissnan/hexo-theme-next/pull/1811)
@@ -84,4 +59,4 @@ And best contributors from initially repository:
 
 It lives on as an open source project with many contributors, a self updating list is [here](https://github.com/theme-next/hexo-theme-next/graphs/contributors).
 
-P.S. If you was do some useful pulls/commits in original repository and you are not in list, let me know and you will be added here.
+P.S. If you did some useful pulls/commits in original repository and you are not in the list, let us know and you will be added here.

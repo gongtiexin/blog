@@ -28,23 +28,15 @@ post:
   read_more: Đọc tiếp
   untitled: Không có tiêu đề
   sticky: Đính
-  toc_empty: Bài viết này không có mục lục
   views: Views
-  comments_count: Comments
   related_posts: Related Posts
-  copy_button: Copy
-  copy_success: Copied
-  copy_failure: Copy failed
   copyright:
     author: Người viết
     link: Liên kết bài viết
     license_title: Chú ý bản quyền
-    license_content: "Tất cả bài viết trong blog này được đăng ký bởi %s trừ khi có thông báo bổ sung."
-page:
-  totally: Toàn bộ
-  tags: thẻ
+    license_content: 'Tất cả bài viết trong blog này được đăng ký bởi %s trừ khi có thông báo bổ sung.'
 footer:
-  powered: "Cung cấp bởi %s"
+  powered: 'Cung cấp bởi %s'
   theme: Giao Diện
   total_views: Total Views
   total_visitors: Total Visitors
@@ -52,18 +44,17 @@ counter:
   tag_cloud:
     zero: Không có thẻ nào
     one: có 1 thẻ tất cả
-    other: "có %d thẻ tất cả"
+    other: 'có %d thẻ tất cả'
   categories:
     zero: Không có trong mục nào
     one: có 1 mục tất cả
-    other: "có %d mục tất cả"
+    other: 'có %d mục tất cả'
   archive_posts:
     zero: Không có bài viết.
     one: 1 bài viết.
-    other: "tổng số %d bài viết."
+    other: 'tổng số %d bài viết.'
 state:
   posts: bài viết
-  pages: trang
   tags: thẻ
   categories: mục
 search:
@@ -77,15 +68,14 @@ cheers:
   excellent: Tuyệt cú mèo
 keep_on: Giữ tiến độ nha.
 symbol:
-  comma: ", "
-  period: ". "
-  colon: ": "
+  comma: ', '
+  period: '. '
+  colon: ': '
 reward:
   donate: Tài trợ
   wechatpay: WeChat Pay
   alipay: Alipay
   bitcoin: Bitcoin
-gitmentbutton: Hiển thị bình luận từ Gitment
 accessibility:
   nav_toggle: Toggle navigation bar
   prev_page: Trang trước

@@ -28,23 +28,15 @@ post:
   read_more: Weiterlesen
   untitled: Unbenannt
   sticky: Angepinnt
-  toc_empty: Dieser Artikel hat kein Inhaltsverzeichnis
   views: Aufrufe
-  comments_count: Kommentare
   related_posts: Ähnliche Beiträge
-  copy_button: Kopieren
-  copy_success: Kopiert
-  copy_failure: Kopieren fehlgeschlagen
   copyright:
     author: Beitragsautor
     link: Beitragslink
     license_title: Urheberrechtshinweis
-    license_content: "Alle Artikel in diesem Blog sind unter %s lizenziert, außer es wird anders angegeben."
-page:
-  totally: Gesamt
-  tags: schlagwörter
+    license_content: 'Alle Artikel in diesem Blog sind unter %s lizenziert, außer es wird anders angegeben.'
 footer:
-  powered: "Erstellt mit  %s"
+  powered: 'Erstellt mit  %s'
   theme: Design
   total_views: Alle Aufrufe
   total_visitors: Alle Besucher
@@ -52,18 +44,17 @@ counter:
   tag_cloud:
     zero: Keine Schlagworte
     one: Insgesamt ein Schlagwort
-    other: "Insgesamt %d Schlagwörter"
+    other: 'Insgesamt %d Schlagwörter'
   categories:
     zero: Keine Kategorien
     one: Insgesamt eine Kategorie
-    other: "Insgesamt %d Kategorien"
+    other: 'Insgesamt %d Kategorien'
   archive_posts:
     zero: Keine Artikel vorhanden.
     one: Ein Artikel.
-    other: "Insgesamt %d Artikel."
+    other: 'Insgesamt %d Artikel.'
 state:
   posts: Artikel
-  pages: Seiten
   tags: schlagwörter
   categories: Kategorien
 search:
@@ -77,15 +68,14 @@ cheers:
   excellent: Exzellent
 keep_on: Bleib dran.
 symbol:
-  comma: ". "
-  period: ", "
-  colon: ": "
+  comma: '. '
+  period: ', '
+  colon: ': '
 reward:
   donate: Spenden
   wechatpay: WeChat Bezahlung
   alipay: Alipay
   bitcoin: Bitcoin
-gitmentbutton: Zeige Kommentare von Gitment
 accessibility:
   nav_toggle: Navigationsleiste an/ausschalten
   prev_page: Vorherige Seite

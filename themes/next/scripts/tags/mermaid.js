@@ -1,5 +1,5 @@
 /**
- * mermaid.js | https://theme-next.org/docs/tag-plugins/mermaid/
+ * mermaid.js | https://theme-next.org/docs/tag-plugins/mermaid
  */
 
 /* global hexo */
@@ -13,4 +13,4 @@ function mermaid(args, content) {
           </pre>`;
 }
 
-hexo.extend.tag.register('mermaid', mermaid, {ends: true});
+hexo.extend.tag.register('mermaid', mermaid, { ends: true });

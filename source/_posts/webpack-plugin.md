@@ -67,7 +67,7 @@ module.exports = {
 
 `inline-manifest-webpack-plugin`是基于`html-webpack-plugin`上的插件，`html-webpack-plugin`为我们提供的 hook 如图所示
 
-![Events](../images/html-webpack-plugin.jpeg)
+![Events](/images/html-webpack-plugin.jpeg)
 
 在生成标签之前(beforeAssetTagGeneration)去掉指定 chunk 文件
 

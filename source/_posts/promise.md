@@ -211,7 +211,7 @@ then = (onFulfilled, onRejected) => {
 
 `resolveQueue`和`rejectQueue`收集的回调，需要在`executor`中的`resolve`和`reject`执行
 
-所以整个代码完整如下
+## 完整代码
 
 ```
 const PromiseStatusEnum = {

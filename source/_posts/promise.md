@@ -41,23 +41,15 @@ promise2.then(console.log, console.log);
 5
 ```
 
-可以总结出`Promise`主要特征如下所示
+结合[`Promise/A+`][0]规范，可以总结出`Promise`基本特征如下所示(`promise`表示`Promise`的实例)
 
-1. `new Promise`会返回一个`Promise`对象
-2. `new Promise`时，会传入一个`executor`函数，`executor`接受`resolve`和`reject`两个回调函数
-3. `executor`会同步执行，`resolve`和`reject`会异步执行
-4. `Promise`初始状态为`pending`，只能从`pending`修改为`fulfilled`或者`rejected`，修改以后无法再次修改
-5. `then`会返回一个`Promise`对象
-
-再根据[`Promise/A+`][0]规范，可以分析出`Promise`的基本特征如下所示(`promise`表示`Promise`的实例)
-
-1. `promise`只有三个状态，pending，fulfilled，rejected
-2. `new Promise`时,需要传入一个`executor`，`executor`会立即执行
-3. `executor`接受`resolve`和`reject`两个回调函数
+1. `new Promise`时,需要传入一个立即执行函数`executor`
+2. `executor`接受两个异步执行的回调函数，分别是成功后的回调`resolve`和失败后的回调`reject`
+3. `promise`只有三个状态，`pending`，`fulfilled`，`rejected`
 4. `promise`初始状态为`pending`
-5. `promise`有一个`value`属性，用来保存成功后返回的值，可以是`undefined/thenable/promise`
-6. `promise`有一个`reason`属性,用来保存失败后返回的值
-7. `promise`只能从`pending`修改为`fulfilled`或者`rejected`，修改以后无法再次修改
+5. `promise`只能从`pending`修改为`fulfilled`或者`rejected`，修改以后不可逆，无法再次修改
+6. `promise`有一个`value`属性，用来保存成功后返回的值
+7. `promise`有一个`reason`属性,用来保存失败后返回的值
 8. `promise`有一个`then`方法，接收 `Promise`成功的回调`onFulfilled`和`Promise`失败的回调`onRejected`
 
 ## Promise 基本结构
@@ -98,7 +90,7 @@ class MyPromise {
 
 ### executor
 
-`executor`接受两个异步执行的回调函数`resolve`和`reject`，通过箭头函数绑定当前实例的`this`，通过`setTimeout`异步执行
+`executor`接受两个回调函数`resolve`和`reject`，通过箭头函数绑定当前实例的`this`，通过`setTimeout`异步执行
 
 ```
 const resolve = (value) => {
@@ -140,14 +132,13 @@ const reject = (error) => {
     setTimeout(run);
 };
 
+//兼容executor的异常情况
 try {
     executor(resolve, reject);
 } catch (e) {
     reject(e);
 }
 ```
-
-`try catch`主要为了兼容传入的`executor`不符合要求的情况
 
 ### then
 
@@ -163,14 +154,14 @@ then = (onFulfilled, onRejected) => {
 };
 ```
 
-再根据`state`的状态进行不同的操作
+再根据`promise`的状态进行不同的操作
 
 1. 当`state === 'fulfilled'`时，执行 onFulfilled
 2. 当`state === 'rejected'`时，执行 onRejected
-3. 当`state === 'pending'`时，需要将回调函数放入队列中，等待执行
-4. 如果再执行回调函数时抛出了异常，那么就会把这个异常作为参数，直接`reject`
-5. 回调函数返回的值不是`Promise`，直接`resolve`
-6. 回调函数返回的值是`Promise`，调用`then`方法，保证`Promise`会被全部执行
+3. 如果在执行回调函数时抛出了异常，那么就会把这个异常作为参数，直接`reject`
+4. 回调函数返回的值不是`Promise`，直接`resolve`
+5. 回调函数返回的值是`Promise`，调用`then`方法，保证`Promise`会被全部执行
+6. 当`state === 'pending'`时，需要将回调函数放入队列中，等待执行
 
 ```
 then = (onFulfilled, onRejected) => {
@@ -211,7 +202,62 @@ then = (onFulfilled, onRejected) => {
 
 `resolveQueue`和`rejectQueue`收集的回调，需要在`executor`中的`resolve`和`reject`执行
 
+```
+const resolve = (value) => {
+    const run = () => {
+        if (this.status === PromiseStatusEnum.PENDING) {
+            this.status = PromiseStatusEnum.FULFILLED;
+            this.value = value;
+
+            while (this.resolveQueue.length) {
+                const callback = this.resolveQueue.shift();
+                callback(value);
+            }
+        }
+    };
+
+    setTimeout(run);
+};
+const reject = (error) => {
+    const run = () => {
+        if (this.status === PromiseStatusEnum.PENDING) {
+            this.status = PromiseStatusEnum.REJECTED;
+            this.reason = error;
+
+            while (this.rejectQueue.length) {
+                const callback = this.rejectQueue.shift();
+                callback(error);
+            }
+        }
+    };
+
+    setTimeout(run);
+};
+```
+
+### catch
+
+实现了`then`以后，`catch`就比较简单了，直接调用`then`，`onFulfilled`传空就行了
+
+```
+catch = (onRejected) => this.then(undefined, onRejected);
+```
+
+### finally
+
+`finally`接受一个回调函数，在`promise`结束时，无论结果是`fulfilled`或者是`rejected`，都会执行该回调函数
+
+```
+finally = (callback) =>
+    this.then(
+        (value) => MyPromise.resolve(callback()).then(() => value),
+        (error) => MyPromise.resolve(callback()).then(() => MyPromise.reject(error))
+    );
+```
+
 ## 完整代码
+
+还有一些静态方法，`resolve`，`reject`，`all`，`reace`等，基本实现了`Promise`以后，就比较简单了，不在赘述了
 
 ```
 const PromiseStatusEnum = {

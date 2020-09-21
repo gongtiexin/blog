@@ -1,6 +1,6 @@
 ---
 title: ajax相应时间过快，页面loading闪烁？
-date: 2020-04-01 12:56:00
+date: 2020-04-01 12:56
 
 categories:
   - 技术

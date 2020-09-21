@@ -1,6 +1,6 @@
 ---
 title: 实现一个低配版的Vuex或Mobx
-date: 2018-03-01 14:52:41
+date: 2018-03-01 14:52
 
 categories:
   - 技术

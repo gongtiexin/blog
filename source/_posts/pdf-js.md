@@ -1,6 +1,6 @@
 ---
 title: 集成Pdf.js
-date: 2017-12-06 10:49:28
+date: 2017-12-06 10:49
 
 categories:
   - 技术

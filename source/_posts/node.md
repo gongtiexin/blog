@@ -1,6 +1,6 @@
 ---
 title: Node
-date: 2017-03-15 10:24:07
+date: 2017-03-15 10:24
 
 categories:
   - 技术

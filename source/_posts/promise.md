@@ -1,6 +1,6 @@
 ---
 title: 手写一个Promise
-date: 2020-08-25 16:38:45
+date: 2020-08-25 16:38
 
 categories:
   - 技术

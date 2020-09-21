@@ -1,6 +1,6 @@
 ---
 title: webpack plugin 实践
-date: 2020-07-17 11:51:00
+date: 2020-07-17 11:51
 
 categories:
   - 技术

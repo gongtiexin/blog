@@ -1,6 +1,6 @@
 ---
 title: 用Geoserver搭建自己的地图服务
-date: 2017-09-26 17:07:12
+date: 2017-09-26 17:07
 
 categories:
   - 技术

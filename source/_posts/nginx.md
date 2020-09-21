@@ -1,6 +1,6 @@
 ---
 title: Nginx
-date: 2017-03-23 11:44:17
+date: 2017-03-23 11:44
 
 categories:
   - 技术

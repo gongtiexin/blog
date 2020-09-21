@@ -24,10 +24,10 @@ tags:
 思考以下代码
 
 ```
-var a = 'a1';
+var a = 1;
 
 function fn1() {
-  var a = 'a2';
+  var a = 2;
 
   function fn2() {
     console.log(a);
@@ -69,7 +69,7 @@ function fn1() {
 fn1();
 ```
 
-结果会输出`a1`
+结果会输出`1`
 
 > 没有任何函数的作用域可以同时出现在两个外部作用域中
 
